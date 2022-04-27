@@ -4,12 +4,14 @@
 The aim of this project is to be able to generate a tree corresponding to the tree structure of a folder. 
 It has two outputs:
 
-* the first one is a tree structure displayed in the terminal.
-* the second one is a LaTeX code corresponding to the same tree structure.
+* The first one is a tree structure displayed in the terminal.
+* The second one is a LaTeX code corresponding to the same tree structure. The LaTeX tree code is generated with [TikZ](https://tikz.net/) (for tree structure) and [fontAwesome5](https://fontawesome.com/) (for icons). 
+
+This project is written in C++.
 
 ### Example
 * The ouput in the terminal has the following form:
-```bash
+```
 test
 |---test1
 |   |---main.py
@@ -27,6 +29,8 @@ test
 ```
 
 * The same LaTeX output has the following form:
+
+![tree](https://user-images.githubusercontent.com/76402335/165479417-6ef07d15-7759-406e-afa6-65268ec7a524.png)
 
 ## Download the project
 Run the following commands in a terminal:
@@ -61,7 +65,7 @@ where:
 All of these parameters are optional, by default:
 * INPUT_PATH    = ```./```
 * OUTPUT_PATH   = ```./```
-* MAX_DEPTH     = $\infty$
+* MAX_DEPTH     = endless
 
 ### Example
 In a terminal, run as well:
